@@ -1,0 +1,9 @@
+def aVeryBigSum(ar):
+    global ar_count
+    summation = 0
+    for n in  range(ar_count):
+        summation += ar[n]
+    return summation
+ar_count = int(input())
+ar = list(map(int, input().rstrip().split()))
+aVeryBigSum(ar)
