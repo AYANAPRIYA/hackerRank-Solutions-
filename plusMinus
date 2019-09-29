@@ -1,0 +1,22 @@
+def plusMinus(arr):
+    neg_no = 0
+    pos_no = 0
+    no_of_zeros = 0
+    for i in range(n):
+        if arr[i] > 0:
+            pos_no += 1
+        elif arr[i] < 0:
+            neg_no += 1
+        else:
+            no_of_zeros += 1
+    a = neg_no/n
+    b = pos_no/n
+    c = no_of_zeros/n
+    print(round(b, 6))
+    print(round(a, 6))
+    print(round(c, 6))
+n = int(input())
+arr = list(map(int, input().rstrip().split()))
+plusMinus(arr)
+    
+    
