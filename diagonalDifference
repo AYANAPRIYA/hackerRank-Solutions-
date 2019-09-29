@@ -1,0 +1,14 @@
+def diagonalDifference(arr):
+    left_right_sum = 0
+    right_left_sum = 0
+    for i in range(n):
+        left_right_sum += arr[i][i]
+        right_left_sum += arr[i][((n-1)-i)]
+    summ = int(left_right_sum)-int(right_left_sum)
+    return abs(summ)
+n = int(input().strip())
+arr = []
+for _ in range(n):
+  arr.append(list(map(int, input().rstrip().split())))
+result = diagonalDifference(arr)
+    
