@@ -1,0 +1,6 @@
+a = int(input())
+b = int(input())
+def solveMeFirst(a, b):
+    ans = int(a + b)
+    print(ans)
+solveMeFirst(a, b)
